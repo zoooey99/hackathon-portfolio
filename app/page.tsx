@@ -263,11 +263,15 @@ export default function Home() {
                   <div>
                     <p className="text-sm font-medium text-gray-400 mb-1">Tech Stack:</p>
                     <div className="flex flex-wrap gap-1">
-                      {activeProject.techStack.map((tech) => (
-                        <Badge key={tech} variant="secondary" className="font-normal bg-gray-700 text-gray-200">
-                          {tech}
-                        </Badge>
-                      ))}
+                    {activeProject.techStack.map((tech) => (
+                      <Badge 
+                        key={`${activeProject.id}-${tech}`} 
+                        variant="secondary" 
+                        className="font-normal bg-gray-700 text-gray-200"
+                      >
+                        {tech}
+                      </Badge>
+                    ))}
                     </div>
                   </div>
 
