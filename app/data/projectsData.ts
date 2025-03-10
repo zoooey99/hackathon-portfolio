@@ -31,15 +31,7 @@ export const projects = [
     date: "Feb 2025",
     description:
       "Pixel Battle is a real-time, blockchain-powered pixel art battleground where users donate to place pixels on a shared canvas, compete for control, earn exclusive NFT rewards, and vote on which charities receive funding—gamifying philanthropy and making fundraising interactive, transparent, and engaging.",
-    techStack: [
-      "nextjs",
-      "flask",
-      "supabase",
-      "solana",
-      "rust",
-      "anchor",
-      "flask",
-    ],
+    techStack: ["nextjs", "flask", "supabase", "solana", "rust", "anchor"],
     role: "Fullstack",
     demoLink: "https://sensational-biscuit-8d27df.netlify.app/",
     githubLink: "https://github.com/PatFDev/PixelBattle",
