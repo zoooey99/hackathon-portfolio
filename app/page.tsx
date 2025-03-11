@@ -355,14 +355,15 @@ export default function Home() {
             <div className="space-y-6">
               <p className="text-lg text-gray-300">
                 <span className="block mb-2 text-xl font-medium bg-gradient-to-r from-rose-400 via-amber-400 to-rose-300 bg-clip-text text-transparent pb-1">
-                  Always Growing, Always Building, Always Moving.
+                  Hey! My name is Zoey :{")"}
                 </span>
-                I'm a hacker, entrepreneur, and former D1 athlete who thrives on learning, building, and competition. My passion lies at the intersection of technology and impact, where I constantly push boundaries and explore new frontiers.
+                I'm a hacker, entrepreneur, and former D1 athlete who thrives on learning, building, and competition. I’m drawn to tough problems and the challenge of taking an idea from 0 to 1—starting with nothing and turning it into something real. I love fast-paced execution, working with intelligent and interesting people, and most importantly, building alongside my friends. 
               </p>
               <p className="text-lg text-gray-300">
-              As co-founder and co-president of KTP’s Sigma chapter, I helped grow it from 2 to {">"}70 members. Later, as President of KTP Nationals, I led its expansion from 15 to nearly 30 chapters nationwide. I’ve built and led teams at every level—scaling organizations, launching startups, and even raising $17K in grants for a previous venture.              </p>
+              As co-founder and co-president of <Link href="https://www.ktpmiami.com/" className="text-blue-500 hover:underline">KTP’s Sigma chapter</Link>, I helped grow it from 2 to over 70 members. Later, as President of <Link href="https://www.kappathetapi.org/" className="text-blue-500 hover:underline">KTP Nationals</Link>, I led its expansion from 15 to nearly 30 chapters nationwide. I’ve built and led several teams—whether it’s scaling organizations, managing machine learning research projects, or creating a venture that secured $17K in grants.
+              </p>
               <p className="text-lg text-gray-300">
-              Life is an adventure, and I embrace it fully. When I’m not brainstorming or building startups, you’ll find me at a hackathon, running trails, or exploring new cities. I love learning, I love building, and I’m always chasing the next challenge.
+              Life is an adventure, and I embrace it fully. When I'm not working on a side project or scheming my next startup idea, you’ll find me at a hackathon, running trails, or exploring new cities. I love learning, I love building, and I’m always chasing the next challenge.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
                 <StatsCard title="GitHub Contributions" value="258" subtitle="Past Year" />
@@ -439,7 +440,7 @@ export default function Home() {
       <section id="contact" className="relative px-4 py-20">
         <div className="container mx-auto max-w-4xl relative">
           <h2 className="text-3xl font-bold tracking-tight text-center sm:text-4xl md:text-5xl bg-gradient-to-r from-rose-400 via-amber-400 to-rose-300 bg-clip-text text-transparent mb-12 pb-1">
-            Let's Connect
+            Co-Founder?
           </h2>
           <div className="flex flex-col items-center justify-center space-y-8">
             <p className="max-w-2xl text-lg text-center text-gray-300">
