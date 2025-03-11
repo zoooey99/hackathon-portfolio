@@ -363,7 +363,7 @@ export default function Home() {
               As co-founder and co-president of <Link href="https://www.ktpmiami.com/" className="text-blue-500 hover:underline">KTP’s Sigma chapter</Link>, I helped grow it from 2 to over 70 members. Later, as President of <Link href="https://www.kappathetapi.org/" className="text-blue-500 hover:underline">KTP Nationals</Link>, I led its expansion from 15 to nearly 30 chapters nationwide. I’ve built and led several teams—whether it’s scaling organizations, managing machine learning research projects, or creating a venture that secured $17K in grants.
               </p>
               <p className="text-lg text-gray-300">
-              Life is an adventure, and I embrace it fully. When I'm not working on a side project or scheming my next startup idea, you’ll find me at a hackathon, running trails, or exploring new cities. I love learning, I love building, and I’m always chasing the next challenge.
+              Life is so exciting—how could anyone ever be bored? When I'm not working on a side project or scheming my next startup idea, you’ll find me at a hackathon, running trails, or exploring new cities. I love learning, I love building, and I’m always chasing the next challenge.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
                 <StatsCard title="GitHub Contributions" value="258" subtitle="Past Year" />
