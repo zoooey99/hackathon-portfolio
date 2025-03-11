@@ -173,7 +173,7 @@ export default function Home() {
       <section id="projects" className="relative px-4 py-20">
         <div className="container mx-auto max-w-7xl relative">
           <h2 className="text-3xl font-bold tracking-tight text-center sm:text-4xl md:text-5xl bg-gradient-to-r from-rose-400 via-amber-400 to-rose-300 bg-clip-text text-transparent mb-12 pb-1">
-            Hackathon Projects
+            Projects
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-[1fr,2fr] gap-8">

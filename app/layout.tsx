@@ -7,7 +7,7 @@ import Head from "next/head"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Zoey Lee | Hackathon Projects",
+  title: "Zoey Lee",
   description: "Builder, Entrepreneur, Athlete",
   icons: {
     icon: '/favicon.png', // /public path
