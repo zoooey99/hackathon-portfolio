@@ -1,17 +1,4 @@
-import {
-  ArrowDown,
-  Github,
-  Linkedin,
-  Mail,
-  Instagram,
-  ExternalLink,
-  Code,
-  Activity,
-  Brain,
-  Leaf,
-  Globe,
-  Compass,
-} from "lucide-react";
+import { Brain, Leaf, Paintbrush, Trophy, Mic } from "lucide-react";
 
 //List of hackathons
 /*
@@ -43,7 +30,7 @@ export const projects = [
       },
     ],
     color: "purple",
-    icon: Brain,
+    icon: Paintbrush,
     bgPattern:
       "radial-gradient(circle at 90% 10%, rgba(147, 51, 234, 0.05) 0%, transparent 70%)",
     category: "Health Tech",
@@ -67,7 +54,7 @@ export const projects = [
       },
     ],
     color: "blue",
-    icon: Activity,
+    icon: Brain,
     bgPattern:
       "radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.05) 0%, transparent 70%)",
     category: "Sustainability",
@@ -95,7 +82,7 @@ export const projects = [
       },
     ],
     color: "cyan",
-    icon: Code,
+    icon: Trophy,
     bgPattern:
       "radial-gradient(circle at 80% 80%, rgba(6, 182, 212, 0.05) 0%, transparent 70%)",
     category: "Sustainability",
@@ -127,8 +114,8 @@ export const projects = [
         linkedin: "https://www.linkedin.com/in/pikum/",
       },
     ],
-    color: "amber",
-    icon: Compass,
+    color: "green",
+    icon: Leaf,
     bgPattern:
       "radial-gradient(circle at 30% 50%, rgba(251, 191, 36, 0.05) 0%, transparent 70%)",
     category: "AI",
@@ -156,8 +143,8 @@ export const projects = [
         linkedin: "https://www.linkedin.com/in/racheltomasetti/",
       },
     ],
-    color: "green",
-    icon: Globe,
+    color: "amber",
+    icon: Mic,
     bgPattern:
       "radial-gradient(circle at 70% 30%, rgba(34, 197, 94, 0.05) 0%, transparent 70%)",
     category: "Education ",

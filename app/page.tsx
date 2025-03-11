@@ -45,12 +45,6 @@ const getColorClasses = (color: string, isActive: boolean) => {
       text: "text-blue-400",
       badge: "bg-blue-500/20 text-blue-300 border-blue-500/30",
     },
-    cyan: {
-      border: "border-cyan-500",
-      bg: isActive ? "bg-cyan-500/10" : "hover:bg-cyan-500/5",
-      text: "text-cyan-400",
-      badge: "bg-cyan-500/20 text-cyan-300 border-cyan-500/30",
-    },
     amber: {
       border: "border-amber-500",
       bg: isActive ? "bg-amber-500/10" : "hover:bg-amber-500/5",
@@ -63,6 +57,13 @@ const getColorClasses = (color: string, isActive: boolean) => {
       text: "text-green-400",
       badge: "bg-green-500/20 text-green-300 border-green-500/30",
     },
+    cyan: {
+      border: "border-cyan-500",
+      bg: isActive ? "bg-cyan-500/10" : "hover:bg-cyan-500/5",
+      text: "text-cyan-400",
+      badge: "bg-cyan-500/20 text-cyan-300 border-cyan-500/30",
+    },
+    
   }
 
   return colorMap[color] || colorMap.emerald
