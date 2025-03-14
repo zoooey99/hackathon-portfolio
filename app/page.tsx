@@ -1,19 +1,6 @@
 "use client"
 
-import {
-  ArrowDown,
-  Github,
-  Linkedin,
-  Mail,
-  Instagram,
-  ExternalLink,
-  Code,
-  Activity,
-  Brain,
-  Leaf,
-  Globe,
-  Compass,
-} from "lucide-react"
+import { ArrowDown, Github, Linkedin, Mail, Instagram, ExternalLink } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { useState, useEffect } from "react"
@@ -22,7 +9,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import StravaIcon from "@/components/strava-icon"
 import { projects } from "./data/projectsData"
-
+import LanguageStatsCard from "@/components/language-stats-card"
 
 // Helper function to get color classes based on project color
 const getColorClasses = (color: string, isActive: boolean) => {
@@ -63,7 +50,6 @@ const getColorClasses = (color: string, isActive: boolean) => {
       text: "text-cyan-400",
       badge: "bg-cyan-500/20 text-cyan-300 border-cyan-500/30",
     },
-    
   }
 
   return colorMap[color] || colorMap.emerald
@@ -85,8 +71,6 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-gray-950 text-gray-200 overflow-hidden">
-      
-
       {/* Floating Gradient Orbs */}
       <div className="fixed inset-0 z-0 opacity-30 pointer-events-none overflow-hidden">
         <div
@@ -169,6 +153,18 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Section Divider */}
+      <div className="relative py-8">
+        <div className="absolute inset-0 flex items-center">
+          <div className="w-full border-t border-gray-800"></div>
+        </div>
+        <div className="relative flex justify-center">
+          <div className="bg-gray-950 px-4">
+            <div className="h-1 w-16 bg-gradient-to-r from-rose-500 to-amber-500 rounded-full"></div>
+          </div>
+        </div>
+      </div>
 
       {/* Projects Section */}
       <section id="projects" className="relative px-4 py-20">
@@ -264,15 +260,15 @@ export default function Home() {
                   <div>
                     <p className="text-sm font-medium text-gray-400 mb-1">Tech Stack:</p>
                     <div className="flex flex-wrap gap-1">
-                    {activeProject.techStack.map((tech) => (
-                      <Badge 
-                        key={`${activeProject.id}-${tech}`} 
-                        variant="secondary" 
-                        className="font-normal bg-gray-700 text-gray-200"
-                      >
-                        {tech}
-                      </Badge>
-                    ))}
+                      {activeProject.techStack.map((tech) => (
+                        <Badge
+                          key={`${activeProject.id}-${tech}`}
+                          variant="secondary"
+                          className="font-normal bg-gray-700 text-gray-200"
+                        >
+                          {tech}
+                        </Badge>
+                      ))}
                     </div>
                   </div>
 
@@ -358,39 +354,36 @@ export default function Home() {
                 <span className="block mb-2 text-xl font-medium bg-gradient-to-r from-rose-400 via-amber-400 to-rose-300 bg-clip-text text-transparent pb-1">
                   Hey! My name is Zoey :{")"}
                 </span>
-                I'm a hacker, entrepreneur, and former D1 athlete who thrives on learning, building, and competition. I’m drawn to tough problems and the challenge of taking an idea from 0 to 1—starting with nothing and turning it into something real. I love fast-paced execution, working with intelligent and interesting people, and most importantly, building alongside my friends. 
+                I'm a hacker, entrepreneur, and former D1 athlete who thrives on learning, building, and competition. I'm drawn to tough problems and the challenge of taking an idea from 0 to 1—starting with nothing and turning it into something real. I love fast-paced execution, working with smart and interesting people, and most importantly, building alongside my friends.
               </p>
               <p className="text-lg text-gray-300">
-              As co-founder and co-president of <Link href="https://www.ktpmiami.com/" className="text-blue-500 hover:underline">KTP’s Sigma chapter</Link>, I helped grow it from 2 to over 70 members. Later, as President of <Link href="https://www.kappathetapi.org/" className="text-blue-500 hover:underline">KTP Nationals</Link>, I led its expansion from 15 to nearly 30 chapters nationwide. I’ve built and led several teams—whether it’s scaling organizations, managing machine learning research projects, or creating a venture that secured $17K in grants.
+              My passion and strongest skillset lies in building and leading high performing teams. Whether it's co-founding and co-leading <Link href="https://www.ktpmiami.com/" className="text-blue-500 hover:underline">
+                  KTP's Sigma chapter
+                </Link>, expanding <Link href="https://www.kappathetapi.org/" className="text-blue-500 hover:underline">
+                  KTP Nationals
+                </Link> from 15 to 30 chapters as its first ever president, managing an ML research project, or starting a venture that raised $17k in grants, I am constantly seeking new challenges to push myself and my teams to the next level.
               </p>
               <p className="text-lg text-gray-300">
-              When I'm not working on a side project or scheming my next startup idea, you’ll find me at a hackathon, running trails, or exploring new cities. I love learning, I love building, and I’m always chasing the next challenge.
+              If I'm not running, lifting, or competing at a hackathon, you'll find me working on a side project or diving into something new. I'm most comfortable with web dev, but I've dabbled into a few other areas as well. Domain-wise, I have deep expertise in elite athletics, biometric data, and dietary health. However, my projects span a wide range of fields—from sustainable LLM inference and B2B grocery SaaS to blockchain-powered charity games and educational tools. <i>In short, I'm interested in almost anything...so reach out if you want to build something cool!</i>
               </p>
-              <div className="flex flex-wrap gap-4 pt-4">
-                <StatsCard title="GitHub Contributions" value="258" subtitle="Past Year" />
-                <StatsCard title="Miles Run" value="131" subtitle="2025 (so far)" />
-              </div>
-              {/* <div className="rounded-lg overflow-hidden transform transition-transform hover:scale-[1.02] shadow-lg">
-                <Image
-                  src="/images/utd-presentation.jpeg"
-                  alt="Zoey with KTP Co-founder Mia Uy"
-                  width={300}
-                  height={300}
-                  className="object-cover w-full h-full"
-                />
-              </div>
-              <div className="rounded-lg overflow-hidden transform transition-transform hover:scale-[1.02] shadow-lg">
-                <Image
-                  src="/images/american-social.jpg"
-                  alt="Zoey with KTP Co-founder Mia Uy"
-                  width={300}
-                  height={300}
-                  className="object-cover w-full h-full"
-                />
-              </div>*/}
-            </div> 
-            <div className="grid gap-4">
+              <div className="flex flex-wrap gap-4 pt-4"></div>
+              {/* Stats Section */}
+              <div className="mt-12 pt-6 border-t border-gray-800">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <StatsCard title="GitHub Contributions" value="258" subtitle="Past Year" />
+                  <StatsCard title="Hackathons Attended" value="9" subtitle="" />
+                  <StatsCard title="Miles Run" value="131" subtitle="2025 (so far)" />
+                </div>
 
+                <div className="mt-6">
+                  <div className="bg-gray-800/50 backdrop-blur-md rounded-lg p-6 border border-gray-700 shadow-xl">
+                    {/* <h3 className="text-xl font-medium text-white mb-4"></h3> */}
+                    <LanguageStatsCard />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="grid gap-4">
               <div className="rounded-lg overflow-hidden transform transition-transform hover:scale-[1.02] shadow-lg">
                 <Image
                   src="/images/professional-headshot.jpg"
@@ -400,15 +393,6 @@ export default function Home() {
                   className="object-cover w-full h-full"
                 />
               </div>
-              {/* <div className="rounded-lg overflow-hidden transform transition-transform hover:scale-[1.02] shadow-lg">
-                <Image
-                  src="/images/hubs-presentation.jpg"
-                  alt="Zoey presenting HubsXR for USTAAR Grant"
-                  width={300}
-                  height={300}
-                  className="object-cover w-full h-full"
-                />
-              </div> */}
               <div className="rounded-lg overflow-hidden transform transition-transform hover:scale-[1.02] shadow-lg">
                 <Image
                   src="/images/soccer-arms-crossed.jpg"
@@ -417,9 +401,16 @@ export default function Home() {
                   height={300}
                   className="object-cover w-full h-full"
                 />
-              </div> 
-
-
+              </div>
+              <div className="rounded-lg overflow-hidden transform transition-transform hover:scale-[1.02] shadow-lg">
+                <Image
+                  src="/images/half-marathon.jpg"
+                  alt="Zoey with KTP Co-founder Mia Uy"
+                  width={300}
+                  height={300}
+                  className="object-cover w-full h-full"
+                />
+              </div>
             </div>
           </div>
         </div>

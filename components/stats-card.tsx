@@ -4,11 +4,12 @@ interface StatsCardProps {
   title: string
   value: string
   subtitle: string
+  className?: string
 }
 
-export default function StatsCard({ title, value, subtitle }: StatsCardProps) {
+export default function StatsCard({ title, value, subtitle, className = "" }: StatsCardProps) {
   return (
-    <Card className="overflow-hidden bg-gray-800/50 backdrop-blur-md border-gray-700 shadow-lg">
+    <Card className={`overflow-hidden bg-gray-800/50 backdrop-blur-md border-gray-700 shadow-lg ${className}`}>
       <CardHeader className="pb-2">
         <CardTitle className="text-sm font-medium text-gray-400">{title}</CardTitle>
       </CardHeader>
@@ -19,4 +20,3 @@ export default function StatsCard({ title, value, subtitle }: StatsCardProps) {
     </Card>
   )
 }
-
