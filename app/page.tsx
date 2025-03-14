@@ -331,7 +331,7 @@ export default function Home() {
       </section>
 
       {/* Section Divider */}
-      <div className="relative py-8">
+      <div className="relative py-24">
         <div className="absolute inset-0 flex items-center">
           <div className="w-full border-t border-gray-800"></div>
         </div>
