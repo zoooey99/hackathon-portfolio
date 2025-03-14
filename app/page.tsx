@@ -354,17 +354,32 @@ export default function Home() {
                 <span className="block mb-2 text-xl font-medium bg-gradient-to-r from-rose-400 via-amber-400 to-rose-300 bg-clip-text text-transparent pb-1">
                   Hey! My name is Zoey :{")"}
                 </span>
-                I'm a hacker, entrepreneur, and former D1 athlete who thrives on learning, building, and competition. I'm drawn to tough problems and the challenge of taking an idea from 0 to 1—starting with nothing and turning it into something real. I love fast-paced execution, working with smart and interesting people, and most importantly, building alongside my friends.
+                I'm a hacker, entrepreneur, and former D1 athlete who thrives on learning, building, and competition.
+                I'm drawn to tough problems and the challenge of taking an idea from 0 to 1—starting with nothing and
+                turning it into something real. I love fast-paced execution, working with smart and interesting people,
+                and most importantly, building alongside my friends.
               </p>
               <p className="text-lg text-gray-300">
-              My passion and strongest skillset lies in building and leading high performing teams. Whether it's co-founding and co-leading <Link href="https://www.ktpmiami.com/" className="text-blue-500 hover:underline">
+                My passion and strongest skillset lies in building and leading high performing teams. Whether it's
+                co-founding and co-leading{" "}
+                <Link href="https://www.ktpmiami.com/" className="text-blue-500 hover:underline">
                   KTP's Sigma chapter
-                </Link>, expanding <Link href="https://www.kappathetapi.org/" className="text-blue-500 hover:underline">
+                </Link>
+                , expanding{" "}
+                <Link href="https://www.kappathetapi.org/" className="text-blue-500 hover:underline">
                   KTP Nationals
-                </Link> from 15 to 30 chapters as its first ever president, managing an ML research project, or starting a venture that raised $17k in grants, I am constantly seeking new challenges to push myself and my teams to the next level.
+                </Link>{" "}
+                from 15 to 30 chapters as its first ever president, managing an ML research project, or starting a
+                venture that raised $17k in grants, I am constantly seeking new challenges to push myself and my teams
+                to the next level.
               </p>
               <p className="text-lg text-gray-300">
-              If I'm not running, lifting, or competing at a hackathon, you'll find me working on a side project or diving into something new. I'm most comfortable with web dev, but I've dabbled into a few other areas as well. Domain-wise, I have deep expertise in elite athletics, biometric data, and dietary health. However, my projects span a wide range of fields—from sustainable LLM inference and B2B grocery SaaS to blockchain-powered charity games and educational tools. <i>In short, I'm interested in almost anything...so reach out if you want to build something cool!</i>
+                If I'm not running, lifting, or competing at a hackathon, you'll find me working on a side project or
+                diving into something new. I'm most comfortable with web dev, but I've dabbled into a few other areas as
+                well. Domain-wise, I have deep expertise in elite athletics, biometric data, and dietary health.
+                However, my projects span a wide range of fields—from sustainable LLM inference and B2B grocery SaaS to
+                blockchain-powered charity games and educational tools.{" "}
+                <i>In short, I'm interested in almost anything...so reach out if you want to build something cool!</i>
               </p>
               <div className="flex flex-wrap gap-4 pt-4"></div>
               {/* Stats Section */}
@@ -376,7 +391,7 @@ export default function Home() {
 
                 <div className="mt-6">
                   <div className="bg-gray-800/50 backdrop-blur-md rounded-lg p-6 border border-gray-700 shadow-xl">
-                    <h3 className="text-xl font-medium text-white mb-4">Language Distribution</h3>
+                    {/* <h3 className="text-xl font-medium text-white mb-4">Language Distribution</h3> */}
                     <LanguageStatsCard />
                   </div>
                 </div>
@@ -466,15 +481,6 @@ export default function Home() {
                   Email Me
                 </Button>
               </Link>
-              {/* <Link href="https://github.com/zoeylee" target="_blank" rel="noopener noreferrer">
-                <Button
-                  variant="outline"
-                  className="border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white shadow-lg hover:shadow-gray-700/25 transition-all duration-300"
-                >
-                  <Github className="w-5 h-5 mr-2" />
-                  GitHub
-                </Button>
-              </Link> */}
             </div>
           </div>
         </div>
@@ -482,7 +488,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="px-4 py-8 text-center text-gray-500">
-        <p>© {new Date().getFullYear()} Zoey Lee. Hackathon Project Portfolio.</p>
+        <p>© {new Date().getFullYear()} Zoey Lee.</p>
       </footer>
     </main>
   )
