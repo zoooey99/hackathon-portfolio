@@ -455,7 +455,7 @@ export default function Home() {
       </div>
 
       {/* Contact Section */}
-      <section id="contact" className="relative px-4 py-20">
+      {/* <section id="contact" className="relative px-4 py-20">
         <div className="container mx-auto max-w-4xl relative">
           <h2 className="text-3xl font-bold tracking-tight text-center sm:text-4xl md:text-5xl bg-gradient-to-r from-rose-400 via-amber-400 to-rose-300 bg-clip-text text-transparent mb-12 pb-1">
             Co-Founder?
@@ -484,7 +484,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Footer */}
       <footer className="px-4 py-8 text-center text-gray-500">
